@@ -1,551 +1,360 @@
-Assignment 1 OOPS
-
-Question 1 :	
-PROGRAM:
-
-
-package Assignment1OOps;
-
-public class Hello1 {
-     public static void main(String args[])
- 
- 
- {
-    System.out.println("Hello World");
-	}
-	
-    
-}
-
-
-OUTPUT:
-
-:
-Hello World
-
-
-QUESTION 2:
-
-PROGRAM:
-
-package Assignment1OOps;
-import java.util.Scanner;
-
-
-public class Roll {
-     public static void main(String args[])
-  {
-     int rollNo;
-	 System.out.println("Enter a roll no: ");
-	 Scanner sc = new Scanner(System.in);
-	 rollNo=sc.nextInt();
-	 
-	 
-	 System.out.println("roll no = "+rollNo);
-	 }
-	 
-    
-}
-
-OUTPUT:
-Enter a roll no: 
-89
-roll no = 89
-
-
-QUESTION 3:	
-
-
-PROGRAM:
-
-package Assignment1OOps;
-
-public class AddByte {
-    public static void main(String args[])
-      {
-    byte a=96;
-	byte b=78;
-	byte c=(byte)(a+b);
-	
-	System.out.println(c);
-	}
-	
-    
-}
-
-OUTPUT:
--82
-
-
-QUESTION 4 :
-
-PROGRAM:
-package Assignment1OOps;
-import java.util.Scanner;
-
-public class Name {
-    public static void main(String args[])
-  {
-	  String name;
-    Scanner sc = new Scanner(System.in);
-	System.out.println("Enter your name: ");
-	 name= sc.nextLine();
-	
-	System.out.println("Welcome "+name);
-	}
-    
-}
-
-OUTPUT:
-Enter your name: 
-SHIVTEJ
-Welcome SHIVTEJ
-
-QUESTION 5:	
-
-PROGRAM:
-
-package Assignment1OOps;
-
-import java.text.DecimalFormat;
-import java.util.Scanner;
-public class Circle {
-    public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter Radius ");
-		float r=sc.nextFloat();
-		double area=Math.PI*Math.pow(r,2);
-		double per=2*Math.PI*r;
-		
-		DecimalFormat df=new DecimalFormat("###.##############");
-		
-		System.out.println("area is: "+df.format(area));
-		System.out.println("perimeter is: "+df.format(per));
-		
-
-	}
-    
-}
-
-OUTPUT:
-
-Enter Radius 
-56
-area is: 9852.03456165759
-perimeter is: 351.85837720205683
-
-QUESTION 6:
-
-PROGRAM:
-
-
-package Assignment1OOps;
-
-import java.util.Scanner;
-public class Temperature {
-      public static void main(String args[])
-   
-   {
-	   Scanner scan=new Scanner(System.in);
-	  
-	  System.out.println("Enter 1 to convert from Celcius to Fahrenheit.");
-	  System.out.println("Enter 2 to convert from Fahrenhiet to Celcius.");
-	  int choice = scan.nextInt();
-	  
-	  double Temperature=0.0;
-	  double Converted=0.0;
-	  
-	  if(choice==1)
-	  {
-	  System.out.println("Enter temperature in Celcius: ");
-	  Temperature=scan.nextDouble();
-	  Converted=9/5.0*Temperature+32;
-	  System.out.println("Temprature in Farenhiet= "+Converted);
-	  }
-	  
-	  else if(choice==2)
-	  {
-	  System.out.println("Enter temperature in Farenhiet: ");
-	  Temperature=scan.nextDouble();
-	  Converted=5/9.0*(Temperature-32);
-	  System.out.println("Temprature in Celcius= "+Converted);
-	  }
-	  
-	  else
-	  
-	  {
-	     System.out.println("Wrong input, please try again");
-		 
-	   }
-	   
-	 }
-    
-}
-
-
-OUTPUT:
-Enter 1 to convert from Celcius to Fahrenheit.
-Enter 2 to convert from Fahrenhiet to Celcius.
-2
-Enter temperature in Farenhiet: 
-45
-Temprature in Celcius= 7.222222222222222
-
-QUESTION 7:
-
-PROGRAM:
-
-
-package Assignment1OOps;
-
-
-public class Swap {
-     public static void main(String[] args) 
-    {
-        int x = 100;
-        int y = 200;
- 
-        System.out.println("Before Swapping : x = " + x + " and y = " + y);
-        x = x + y;      
-        y = x - y;      
-        x = x - y;     
-         
-       
-        System.out.println("After swapping : x = " + x + " and y = " + y);
-    }
-    
-}
-
-
-OUTPUT:
-Before Swapping : x = 100 and y = 200
-After swapping : x = 200 and y = 100
-
-
-QUESTION 8
-
-PROGRAM:
-
-
-package Assignment1OOps;
-
-import java.util.Scanner;
-public class Salary {
-     public static void main(String args[])
-   {
-    float basic_salary,da,hra,Grosspayment;
-	Scanner scan=new Scanner(System.in);
-	System.out.println("Enter Basic salary of employee: ");
-	basic_salary=scan.nextFloat();
-	
-	if(basic_salary < 10000)
-	{
-	 hra = (10*basic_salary) /100;
-	 da = (90*basic_salary) /100;
-	 }
-	 
-	 else 
-	 {
-	   hra = 2000;
-	   da =(90*basic_salary) /100;
-	   }
-	   
-	   Grosspayment = basic_salary + da + hra;
-	   System.out.println("Gross salary of Employee: "+Grosspayment);
-	   }
-    
-}
-
-
-OUTPUT:
-Enter Basic salary of employee: 
-10000
-Gross salary of Employee: 21000.0
-
-
-
-QUESTION 9
-
-
-PROGRAM A:(USING IF - ELSE)
-
-package Assignment1OOps;
-
-
-public class Largest {
-      public static void main(String[] args) {
-
-        double n1 = -55.4, n2 = 23.45, n3 = 21.23;
-
-        if( n1 >= n2 && n1 >= n3)
-            System.out.println(n1+ " is the largest number.");
-
-        else if (n2 >= n1 && n2 >= n3)
-            System.out.println(n2+ " is the largest number.");
-
-        else
-            System.out.println(n3+ " is the largest number.");
-    }
-    
-}
-
-OUTPUT:
-23.45 is the largest number.
-
-PROGRAM B: (USING TERNARY OPERTOR)
-
-package Assignment1OOps;
-
-import java.util.Scanner;
-public class Largest2 {
-        public static void main(String[] args) 
-    {
-        int num1, num2, num3, result, temp;
+String Q1: Write a program which takes a string and prints the number of vowels, consonants(non-vowels).
+ numbers and other characters. 
+
+import java.io.*; 
+  
+public class GFG { 
+    static void countCharacterType(String str) 
+    { 
+
+        int vowels = 0, consonant = 0, specialChar = 0,  
+            digit = 0; 
+        for (int i = 0; i < str.length(); i++) { 
+              
+            char ch = str.charAt(i); 
       
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter First Number:");
-        num1 = scanner.nextInt();
-        System.out.println("Enter Second Number:");
-        num2 = scanner.nextInt();
-        System.out.println("Enter Third Number:");
-        num3 = scanner.nextInt();
-        scanner.close();
-       
-        
-       
-        temp = num1>num2 ? num1:num2;
-        result = num3>temp ? num3:temp;
-        System.out.println("Largest Number is:"+result);
-    }
-}
+            if ( (ch >= 'a' && ch <= 'z') ||  
+                (ch >= 'A' && ch <= 'Z') )
+				{ 
+                ch = Character.toLowerCase(ch);; 
+      
+                if (ch == 'a' || ch == 'e' || ch == 'i' || 
+                    ch == 'o' || ch == 'u') 
+                    vowels++; 
+                else
+                    consonant++; 
+            } 
+            else if (ch >= '0' && ch <= '9') 
+                digit++; 
+            else
+                specialChar++; 
+        } 
+          
+        System.out.println("Vowels: " + vowels); 
+        System.out.println("Consonant: " + consonant); 
+        System.out.println("Digit: " + digit); 
+        System.out.println("Special Character: " + specialChar); 
+    } 
+      
+    static public void main (String[] args) 
+    { 
+        String str = "geeks for geeks121"; 
+          
+        countCharacterType(str); 
+    } 
+} 
 
 
-OUTPUT:
+Q 2: Given a string which contains numbers from 0 to 9 expressed as words, output a string which
+contains all numbers incremented by 1 
 
-Enter First Number:
-
-23
-Enter Second Number:
-14
-Enter Third Number:
-56
-Largest Number is:56
-
-
-QUESTION 10:
-
-PROGRAM:
-
-package Assignment1OOps;
 
 import java.util.Scanner;
-public class LeapYear {
-     public static void main(String[] args){
-      int year;
-      System.out.println("Enter an Year :: ");
-      Scanner sc = new Scanner(System.in);
-      year = sc.nextInt();
 
-      if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0))
-         System.out.println("Specified year is a leap year");
-      else
-         System.out.println("Specified year is not a leap year");
-   }
-    
-}
+public class Solution2 {
+	public static void main(String[] args) {
+		System.out.println("Enter your Sentence....");
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine(), s1 = "", s2 = "";
+		int i;
+		s = s + ' ';
+		for (i = 0; i < s.length(); i++) {
+			if (s.charAt(i) == ' ') {
+				switch (s2) {
+				case "zero":s2="one";
+				break;
+				case "one":
+					s2 = "two";
+					break;
+				case "two":
+					s2 = "three";
+					break;
+				case "three":
+					s2 = "four";
+					break;
+				case "four":
+					s2 = "five";
+					break;
+				case "five":
+					s2 = "six";
+					break;
+				case "six":
+					s2 = "seven";
+					break;
+				case "seven":
+					s2 = "eight";
+					break;
+				case "eight":
+					s2 = "nine";
+					break;
+				case "nine":
+					s2 = "ten";
+					break;
+				}
 
-
-OUTPUT:
-
-Enter an Year :: 
-2020
-Specified year is a leap year
-
-QUESTION 11:
-
-PROGRAM:
-
-package Assignment1OOps;
-
-import java.util.Scanner;
-public class Expressions {
-    int z= 1;
-    static int a =5;
-    public static void main(String[] args) {
-        int y;
-
-        int x = 10;
-        y = (x*x) + (3*x) - 7;
-        System.out.println("Value of y is "+ y);
-
-        x= 15;
-        y = x++ + ++x;
-        System.out.println("Value of x is " + x);
-        System.out.println("Value of y is " + y);
-
-        int z = x++ - --y - --x + x++;
-        System.out.println("Value of x is " + x);
-        System.out.println("Value of y is " + y);
-        System.out.println("Value of z is " + z);
+				s1 = s1.concat(s2);
+				s1 = s1 + ' ';
+				s2 = "";
+			} else
+				s2 = s2 + s.charAt(i);
 		}
-		}
-		
-OUTPUT:
-		
-Value of y is 123
-Value of x is 17
-Value of y is 32
-Value of x is 18
-Value of y is 31
-Value of z is -14
-		
-		
-		
-QUESTION 12
-		
-		
-PROGRAM:
-		
-	import java.util.Scanner;
-public class Average
- {
-	private static Scanner sc;
-	public static void main(String[] args) 
-	{
-		int english, chemistry, computers, physics, maths; 
-	        float total, Percentage;
-		sc = new Scanner(System.in);
-		
-		System.out.print(" Please Enter the Five Subjects Marks : ");
-		english = sc.nextInt();	
-		chemistry = sc.nextInt();	
-		computers = sc.nextInt();	
-		physics = sc.nextInt();	
-		maths = sc.nextInt();	
-		
-		total = english + chemistry + computers + physics + maths;
-		Percentage = (total / 500) * 100;
-	    
-	   
+		System.out.println("Your expected output is    ::");
+		System.out.println();
+		System.out.println(s1);
+		sc.close();
 
-	    System.out.println(" Percentage Marks  =  " + Percentage);
 	}
-}	
-
-
-OUTPUT:
- Please Enter the Five Subjects Marks : 23
-34
-56
-89
-90
- Percentage Marks  =  58.399998
-
-QUESTION 13
-
-PROGRAAM: 
-import java.util.Scanner;
-public class Simple
-{
-    public static void main(String args[]) 
-    {
-        float p, r, t, sinterest;
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Enter the Principal : ");
-        p = scan.nextFloat();
-        System.out.print("Enter the Rate of interest : ");
-        r = scan.nextFloat();
-        System.out.print("Enter the Time period : ");
-        t = scan.nextFloat();
-        scan.close();
-        sinterest = (p * r * t) / 100;
-        System.out.print("Simple Interest is: " +sinterest);
-    }
 }
 
-OUTPUT:
-Enter the Principal : 2000
-Enter the Rate of interest : 5
-Enter the Time period : 6
-Simple Interest is: 600.0
+
+Q 3: Write a function to replace multiple consecutive occurrences of characters with a single character 
 
 
-
-QUESTION 14
-
-PROGRAM:
-
-import java.util.Scanner;
-public class Month
-{
-    public static void main(String args[])
-    {
-        int m, year, month, day;
-        Scanner s = new Scanner(System.in);
-        System.out.print("Enter the number of days:");
-        m = s.nextInt();
-        year = m / 365;
-        m = m % 365;
-        System.out.println("No. of years:"+year);
-         month= m / 30;
-        m = m % 30;
-        System.out.println("No. of month:"+month);
-        day = m;
-        System.out.println("No. of days:"+day);
-    }
-}
-
-OUTPUT:
-Enter the number of days:23
-No. of years:0
-No. of month:0
-No. of days:23
-
-
-QUESTION 15:
-
-PROGRAM:
 import java.util.*;
-public class Marriage
- {
-	
-		public static void main(String[] args) {
-			Scanner sc=new Scanner(System.in);
-			System.out.print("Enter your Gender(M/F) :");
-			char gender=sc.next().toUpperCase().charAt(0);
-			if(gender=='M' || gender=='F') {
-			System.out.print("Enter your age :");}
-			else
-			{
-				System.out.println("IMVALID INPUT");
-				
-			}
-			int age=sc.nextInt();
-			
-			if(gender=='M' && age>18 ) {
-				System.out.println("Gender = MALE");
-				System.out.println("ELIGIBLE FOR MARRIAGE");
-			}else if( gender=='F' && age>18) {
-				System.out.println("Gender= FEMALE");
-				System.out.println("ELIGIBLE FOR MARRIAGE");
-			}
-			
-			
-	
+
+public class Solution3 {
+	public static void main(String args[])
+	{
+		System.out.println("Enter any Sentence..");
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+		sc.close();
+		String s1="";
+		char a[]= s.toCharArray();
+		int size = s.length();
+		for(int i=0;i<size-1;i++)
+		{
+		if(a[i]==a[i+1])
+		{
+			a[i]=' ';
 		
 		}
-		
+		}
+		for(int i=0;i<size;i++)
+		{
+			if(a[i]!=' ')
+			{
+				s1=s1+a[i];
+			}
+		}
+		System.out.println("Your expwxted output is  ::");
+		System.out.println();
+		System.out.println(s1);
+		}
+
 }
 
 
-OUTPUT:
-Enter your Gender(M/F) :M
-Enter your age :23
-Gender = MALE
-ELIGIBLE FOR MARRIAGE
 
 
 
+Q:4 : Given a string, print the first non-repeating character in the string. 
+
+class GFG { 
+    static final int NO_OF_CHARS = 256; 
+    static char count[] = new char[NO_OF_CHARS]; 
+  
+   
+    static void getCharCountArray(String str) 
+    { 
+        for (int i = 0; i < str.length(); i++) 
+            count[str.charAt(i)]++; 
+    } 
+
+    static int firstNonRepeating(String str) 
+    { 
+        getCharCountArray(str); 
+        int index = -1, i; 
+  
+        for (i = 0; i < str.length(); i++) { 
+            if (count[str.charAt(i)] == 1) { 
+                index = i; 
+                break; 
+            } 
+        } 
+  
+        return index; 
+    } 
+  
+  
+    public static void main(String[] args) 
+    { 
+        String str = "geeksforgeeks"; 
+        int index = firstNonRepeating(str); 
+  
+        System.out.println( 
+            index == -1
+                ? "Either all characters are repeating or string "
+                      + "is empty"
+                : "First non-repeating character is "
+                      + str.charAt(index)); 
+    } 
+} 
 
 
 
+Q 5 :Write a program which prints the length of each word in a sentence. 
+
+
+
+class CountCharacterInEachWords { 
+    static void count(String str) 
+    { 
+       
+        char[] ch = str.toCharArray(); 
+        for (int i = 0; i < ch.length; i++) { 
+  
+            String s = ""; 
+  
+            while (i < ch.length && ch[i] != ' ') { 
+  
+               
+                s = s + ch[i]; 
+                i++; 
+            } 
+  
+            if (s.length() > 0)  
+                System.out.println(s + "->" + s.length());             
+        } 
+    } 
+    public static void main(String[] args) 
+    { 
+        String str = "geeks for geeks"; 
+        count(str); 
+    } 
+} 
+
+Q 6 :Given a string, check whether it is a formed by concatenating the same string 3 times. 
+
+import java.util.Scanner;
+
+public class Solution6 {
+	public static void main(String args[]) 
+{ 
+		System.out.println("Enter your Sentence....");
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		int c=0;
+		if(s.length()%3==0)
+		{ 
+			int k=s.length()/3;
+			String s1=s.substring(0,k);
+			for(int i=0;i<s.length();i=i+k)
+			{
+				if(s1.equalsIgnoreCase(s.substring(i, i+k)))
+				{
+					c++;
+				}
+			}
+			System.out.println("True :: three times is repeating character present in string ");
+		}
+		else
+		System.out.println("False");
+        sc.close();
+}
+}
+
+Q 7:Given a string , output another string where the case of the characters is reversed. 
+
+import java.util.Scanner;
+class Solution7{ 
+	
+	static void caseChange(StringBuffer string) 
+	{ 
+		int n = string.length(); 
+		for (int i=0; i<n; i++) 
+		{ 
+			Character c = string.charAt(i); 
+			if (Character.isLowerCase(c)) 
+				string.replace(i, i+1, Character.toUpperCase(c)+""); 
+			else
+				string.replace(i, i+1, Character.toLowerCase(c)+""); 
+			
+		} 
+	} 
+	
+	public static void main(String[] args) 
+	{  
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string that you want reverse ");
+		String s=sc.nextLine();
+		StringBuffer string = new StringBuffer(s); 
+		caseChange(string); 
+		System.out.println(string); 
+		sc.close();
+		} 
+} 
+
+
+Q 8 : Write a program to reverse a string. 
+
+
+import java.util.Scanner;
+class ReverseofaString
+{
+	public static void main(String[ ] arg)
+	{
+	String str;
+	Scanner scan=new Scanner(System.in);
+	
+	System.out.print("Enter a string : ");
+	str=scan.nextLine();	
+	
+	char[] ch=str.toCharArray(); 
+	System.out.println("Reverse of a String is :"); 
+	
+	int j=ch.length;
+	for(int i=j;i>0;i--)
+	{
+	System.out.print(ch[i-1]); 
+	}
+	}
+}
+
+
+Q 9:Write a program which accepts two string and prints all unique characters which are common in
+both stirngs.
+
+
+import java.io.*; 
+import java.util.*; 
+  
+
+public class Simstrings 
+{ 
+    static final int MAX_CHAR = 26; 
+  
+    static void printCommon(String s1, String s2) 
+    { 
+     
+        int[] a1 = new int[MAX_CHAR]; 
+        int[] a2 = new int[MAX_CHAR]; 
+  
+        int length1 = s1.length(); 
+        int length2 = s2.length(); 
+  
+        for (int i = 0 ; i < length1 ; i++) 
+           a1[s1.charAt(i) - 'a'] += 1; 
+  
+        for (int i = 0 ; i < length2 ; i++) 
+           a2[s2.charAt(i) - 'a'] += 1; 
+  
+      
+        for (int i = 0 ; i < MAX_CHAR ; i++) 
+        { 
+            if (a1[i] != 0 && a2[i] != 0) 
+            { 
+                
+                for (int j = 0 ; j < Math.min(a1[i], a2[i]) ; j++) 
+                    System.out.print(((char)(i + 'a'))); 
+            } 
+        } 
+    } 
+  
+   
+    public static void main(String[] args) throws IOException 
+    { 
+        String s1 = "geeksforgeeks", s2 = "practiceforgeeks"; 
+        printCommon(s1, s2); 
+    } 
+} 
