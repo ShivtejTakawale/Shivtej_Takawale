@@ -1,0 +1,149 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    body {
+      background-color: lightblue;
+    }
+
+    div {
+      border: 1px solid black;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-right: 150px;
+      margin-left: 80px;
+      background-color: lightblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>The td colspan attribute</h1>
+
+  <table border="1">
+
+    <tr>
+
+      <th></th>
+
+      <th></th>
+
+      <th colspan="2">Fruit</th>
+      <td colspan=4><img src="abc.jpg" alt="" border=3 height=100 width=100></img></td>
+
+
+    </tr>
+
+
+
+    <tr>
+
+      <th></th>
+
+      <th></th>
+
+      <th># of humps</th>
+
+      <th>Indigenous region</th>
+
+      <th>Spits?</th>
+      <th>Produce wool?</th>
+
+    </tr>
+
+
+
+    <tr>
+
+      <th rowspan="2">Feature</th>
+
+      <th>Flavor</th>
+
+      <td>2</td>
+
+      <td>Afrika/Asia</td>
+      <td>yes</td>
+      <td>yes</td>
+
+    </tr>
+
+
+
+    <tr>
+
+      <th>Size</th>
+
+      <td>1</td>
+
+      <td>Andes Mountains</td>
+      <td>yes</td>
+      <td>yes</td>
+
+    </tr>
+
+  </table>
+
+
+
+
+
+</body>
+
+</html> -->
+
+
+<html>
+  <head>
+    <body>
+      <table border="1px" style="margin-left: auto; margin-right: auto; margin-top: auto;margin-bottom: auto;
+      position: relative;">
+        <caption>
+          Table no:1
+        </caption>
+        <tr>
+<td rowspan="2">
+
+  <img src="camel.jpg" alt="" border=3 height=100 width=100></img>
+</td>
+<body style="background-color:yellowgreen;">
+
+<td colspan="4" style="text-align: center;">
+  Camelid comparison Approximate as of 6/2011
+</td>
+        </tr>
+        <tr>
+          <td># of humps</td>
+          <td>Indigenous regions</td>
+          <td>Splits?</td>
+          <td>Produces wool?</td>
+
+        </tr>
+        <tr>
+          <td>Camel(bactrian)</td>
+          <td>2</td>
+          <td>Africa/Asia</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          
+        </tr>
+        <tr>
+          <td>Llamas</td>
+          <td>1</td>
+          <td>Andes Mountain</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          
+        </tr>
+      
+      </table>
+    </body>
+  </head>
+</html>
