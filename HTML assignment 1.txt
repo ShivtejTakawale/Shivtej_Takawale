@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+<title>MY_RESUME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+</head>
+<body>
+<div class="container">
+<a href="#bottom">click here</a>
+
+<body bgcolor="gold">
+<h1><u>Resume</u></h1>
+ <hr />
+   <img src="C:\Users\Shivtej Takawale\Desktop\Shiv Documents\Photos and videos\pic.JPG"  
+          title="Shivtej Takawale"style='text-align:center;
+margin-left: auto;
+margin-right: auto;
+width: 10%;
+'>
+
+		  
+		 
+<p>Name: Shivtej Popatrao Takawale.<br>
+ Email:<a href="mailto:shivtejtakawale@gmail.com">shivtejtakawale@gmail.com</a>
+<br>
+   Mob.No:7757818942</p>
+   
+   <hr /> 
+   
+   <p><b>CAREER OBJECTIVES: </b><br>
+     To obtain industry experience by working in a live project and to gain practical knowledge, skill set
+and expertise. To imbibe the true concept of teamwork, develop vision and direction to achieve set
+goals. 
+</p>
+  <hr /> 
+  
+
+<table class="table table-dark">
+<thread>
+
+  <tr>
+    <th>EDUCATION</th>
+    <th>INSTITUTE NAME</th> 
+    <th>GRADE</th>
+	<th>&ensp;PASSING YEAR</th>
+  </tr>
+  </thread>
+  <tbody>
+  <tr>
+    <td>SSC</td>
+    <td>&nbsp; Punyashlok Ahilyadevi Vidyamandir,Jejuri</td>
+    <td>&ensp;89.80</td>
+	<td>&ensp; 2013</td>
+  </tr>
+  <tr>
+    <td>Diploma</td>
+    <td>&nbsp; Government Polytechnic Pune</td>
+    <td>&ensp;79.20</td>
+	<td>&ensp;2016</td>
+  </tr>
+  <tr>
+    <td>BE</td>
+    <td>&nbsp; Rajashri Shahu School Of Engineering and Research,Narhe,Pune</td>
+    <td>&ensp;7.57 CGPA</td>
+	<td>&ensp;2019</td>
+  </tr>
+   </tbody>
+</table>
+<hr />
+<p class="head"><b>TECHNICAL SKILLS:</b></p>
+ <ul>
+    <li>Core Java </li>
+	<li>Data Structure </li>
+	<li>Data Base</li>
+	<li>Web Programming</li>
+</ul>
+<hr />
+	
+<p class="head"><b>INTERESTS:</b></p>
+ <ul>
+    <li>Drawing</li>
+    <li>Photography</li>
+    <li>Design</li>
+    <li>Programming</li>
+    <li>Computer Science</li>
+</ul>
+<hr />
+
+<p class="head"><b>QUALITIES AND STRENGTHS:</b></p>
+ <ul>
+    <li>Positive Attitude</li>
+	<li>Stage Confidence</li>
+	<li>Good team player</li>
+	<li>Quick learner</li>
+	<li>Problem Solving and Decision Making </li>
+</ul>
+<hr />
+
+<p class="head"><b>ACHIEVEMENTS AND AWARDS:</b></p>
+ <ul>
+    <li> Represent my institute on international platform at two universities in Thailand in 2018</li>
+	<li>State level 2nd runner up of abacus level 5 also represent myself at national level competition held in
+Bangalore in 2012. </li>
+	<li>Intermediate drawing examination passed with A grade. </li>
+	<li> 3rd runner up at district level baseball tournament. </li>
+	
+</ul>
+<hr />
+<p class="head"><b>PERSONAL DETAILS:</b></p>
+<table>
+  <tr>
+    <tr>Name:				&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;Shivtej Popatrao Takawale <br></tr>
+    <tr>Date Of Birth:		&nbsp;&emsp;&emsp;30 May 1997<br></tr>
+    <tr>Sex:				&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Male <br></tr>
+	<tr>Hobbies:			&nbsp;&emsp;&emsp;&emsp;&emsp;Modelling, Volleyball, Dance.<br></tr>
+	<tr>Permanent Address:  SHIVRAJ building Vidyanagar, Jejuri, Pune, Maharashtra -412303 <br></tr>
+  </tr>
+</table>
+ <a name='bottom'></a><br>
+<a href="" target="_top">Go to Top</a><br>
+</body>
+</html>
